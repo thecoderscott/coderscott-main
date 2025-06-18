@@ -1,0 +1,40 @@
+@import "@fontsource/fira-mono";
+@import "@fontsource/alata";
+
+/* Themes */
+@import "../themes/default.css";
+@import "../themes/green.css";
+@import "../themes/retrowave.css";
+
+[data-theme] {
+  /* Common Colours */
+  --color-common-white: rgb(255, 255, 255);
+  --color-common-black: rgb(0, 0, 0);
+  --color-site-bg: var(--color-main-bg);
+  
+  /* Fonts */
+  --font-serif: var(--serif-font);
+  --font-sans: var(--main-font);
+  --font-mono: var(--mono-font);
+
+  /* Brand Colours */
+  --color-brand-primary: var(--color-primary);
+  --color-brand-secondary: var(--color-secondary);
+  --color-brand-tertiary: var(--color-tertiary);
+  --color-brand-quaternary: var(--color-quaternary);
+  
+  /* Typography Colours */
+  --color-typography-header: var(--typography-header-color);
+  --color-typography-body: var(--typography-body-color);
+  --color-typography-button-dark: var(--typography-button-dark-color);
+  --color-typography-button-light: var(--typography-button-light-color);
+
+  /* Component Specific Colours */
+  /* Navigation */
+  --color-navigation-bg: var(--component-navigation-bg-color);
+  --color-navigation-icon: var(--component-navigation-icon-color);
+  
+  /* Tags */
+  --color-component-tags-bg: var(--component-tags-bg-primary-color);
+  --color-component-tags-text: var(--component-tags-typography-primary-color);
+}

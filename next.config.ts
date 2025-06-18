@@ -1,7 +1,24 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  compiler: {
+    styledComponents: true,
+  },
+  async redirects() {
+    return [
+      {
+        source: '/((?!soon).*)',
+        has: [
+          {
+            type: 'host',
+            value: '(.*)',
+          },
+        ],
+        destination: '/soon',
+        permanent: false,
+      },
+    ]
+  },
+}
 
-export default nextConfig;
+export default nextConfig

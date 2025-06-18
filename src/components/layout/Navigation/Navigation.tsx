@@ -1,13 +1,16 @@
+'use client'
+
+import clsx from 'clsx'
+import { usePathname } from 'next/navigation'
 import { Home, Hash, User, Briefcase, Send } from 'lucide-react'
 
 import NavigationItem from '@/components/layout/Navigation/NavigationItem'
 import { NavigationConfig } from '@/components/layout/Navigation/types/NavigationConfig'
-import clsx from 'clsx'
 
 const iconProps = { width: 16, height: 16, className: 'text-navigation-icon' }
 const navigationConfig: NavigationConfig[] = [
   {
-    title: 'Home',
+    title: 'Page',
     url: '/',
     icon: <Home {...iconProps} />,
   },
@@ -39,13 +42,23 @@ const navigationConfig: NavigationConfig[] = [
 ]
 
 const Navigation = () => {
+  const pathname = usePathname()
+
+  if (pathname === '/soon') return null
+
   return (
     <nav
       className={clsx(
-        'absolute top-50 left-0 z-999',
+        'absolute top-1/2 left-0 -translate-y-1/2 z-[999]', // vertically centered + fixed
         'py-2 px-2 flex flex-col items-center',
-        'border-l-0 uwxl:border-l-2 border-2 border-brand-secondary rounded-tr-3xl rounded-br-3xl uwxl:rounded-full',
-        'bg-navigation-bg'
+        'bg-navigation-bg',
+        // Border logic
+        'border-2 border-brand-secondary',
+        'border-l-0 uwxl:border-l-2',
+        // Radius logic
+        'rounded-tr-3xl rounded-br-3xl uwxl:rounded-full',
+        'transition-all duration-300',
+        'shadow-none uwxl:shadow-lg'
       )}
     >
       {navigationConfig.map(({ title, icon, url }: NavigationConfig) => (

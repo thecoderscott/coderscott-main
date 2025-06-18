@@ -1,5 +1,5 @@
 /* themes/green.css */
-.theme-green {
+[data-theme="green"] {
   /* Brand Colours */
   --color-primary: #011418;
   --color-secondary: #52E074;

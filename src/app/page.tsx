@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Page() {
   return (
     <div className="min-h-screen grid place-items-center">
       <h1 className="text-5xl font-bold text-typography-header">Tailwind is 🔥</h1>
