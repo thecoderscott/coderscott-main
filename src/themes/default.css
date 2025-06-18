@@ -1,0 +1,36 @@
+/* themes/green.css */
+:root {
+  /* Brand Colours */
+  --color-primary: #FF0000;
+  --color-secondary: #FF0000;
+  --color-tertiary: #FF0000;
+  --color-quaternary: #FF0000;
+  
+  /* Fonts */
+  --serif-font: 'Playfair Display', serif;
+  --main-font: ui-sans-serif, system-ui, sans-serif;
+  --mono-font: ui-monospace, SFMono-Regular, monospace;
+  
+  /* Core Component Colours */
+  /* Status Colours */
+  --color-success: #2FFF44;
+  --color-warning: #FFCC15;
+  --color-error: #C60000;
+  --color-info: #1A83FF;
+  
+  --color-main-bg: #FF0000;
+
+  /* Typography Colours */
+  --typography-header-color: #FF0000;
+  --typography-button-dark-color: #FF0000;
+  --typography-button-light-color: #FF0000;
+  --typography-body-color: #FF0000;
+
+  /* Component Specific Colours */
+  --component-navigation-bg-color: #FF0000;
+  --component-navigation-icon-color: #FFFFFF;
+  --component-tags-bg-primary-color: #FF0000;
+  --component-tags-bg-hover-color: #FF0000;
+  --component-tags-typography-primary-color: #FF0000;
+  --component-tags-typgraphy-hover-color: #FF0000;
+}

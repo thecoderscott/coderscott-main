@@ -1,0 +1,24 @@
+/* themes/retrowave.css */
+.theme-retrowave {
+  /* Brand Colours */
+  --color-primary: #F6019D;
+  --color-secondary: #9700CC;
+  --color-tertiary: #2DE2E6;
+  --color-quaternary: #6009CE;
+
+  /* Core Component Colours */
+  --color-main-bg: #060817;
+
+  /* Typography Colours */
+  --typography-header-color: #FFFFFF;
+  --typography-button-dark-color: #1E1E1E;
+  --typography-button-light-color: #9E9E9E;
+  --typography-body-color: #A1A1A1;
+
+  /* Component Specific Colours */
+  --component-navigation-bg-color: #1A2C2F;
+  --component-tags-bg-primary-color: #52E074;
+  --component-tags-bg-hover-color: #011418;
+  --component-tags-typography-primary-color: #1E1E1E;
+  --component-tags-typgraphy-hover-color: #D7DDED;
+}

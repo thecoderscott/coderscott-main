@@ -1,0 +1,29 @@
+/* themes/green.css */
+.theme-green {
+  /* Brand Colours */
+  --color-primary: #011418;
+  --color-secondary: #52E074;
+  --color-tertiary: #FFFBFA;
+  --color-quaternary: #6009CE;
+
+  --serif-font: 'Playfair Display', serif;
+  --main-font: 'Alata', ui-sans-serif, system-ui, sans-serif;
+  --mono-font: 'Fira Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Core Component Colours */
+  --color-main-bg: #011418;
+  
+  /* Typography Colours */
+  --typography-header-color: #FFFFFF;
+  --typography-button-dark-color: #1E1E1E;
+  --typography-button-light-color: #D7DDED;
+  --typography-body-color: #A1A1A1;
+  
+  /* Component Specific Colours */
+  --component-navigation-bg-color: #1A2C2F;
+  --component-navigation-icon-color: #FFFFFF;
+  --component-tags-bg-primary-color: #52E074;
+  --component-tags-bg-hover-color: #011418;
+  --component-tags-typography-primary-color: #1E1E1E;
+  --component-tags-typgraphy-hover-color: #D7DDED;
+}
