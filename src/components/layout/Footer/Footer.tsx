@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { media } from '@/styles/media'
 
 const Footer = () => {
   return (
@@ -12,11 +13,15 @@ const Footer = () => {
 export default Footer
 
 const FooterContainer = styled.footer`
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-family: var(--font-sans);
   color: var(--color-typography-header);
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 
   border-top: 2px solid var(--color-brand-secondary);
+
+  ${media.md} {
+    font-size: 1rem;
+  }
 `
