@@ -10,7 +10,7 @@ interface NavigationItemProps {
   icon: ReactNode | null
 }
 
-const NavigationItem = ({ title, url, icon }: NavigationItemProps) => {
+const NavigationItem = ({ url, icon }: NavigationItemProps) => {
   const pathname = usePathname()
   const isActive = `/${pathname.split('/')[1]}` === url
 
